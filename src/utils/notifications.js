@@ -1,5 +1,14 @@
 const admin = require('firebase-admin');
 
+/**
+ * send Notification to multiple devices
+ * send Notification to a user
+ * send Notification to a branch
+ * send Notification to all users
+ * send Event Reminder for the next day, 1 hour, 30 minutes and all
+ */
+
+
 // Initialize Firebase Admin SDK
 if (!admin.apps.length) {
   const serviceAccount = {
@@ -20,6 +29,13 @@ if (!admin.apps.length) {
   });
 }
 
+
+
+
+
+
+
+//send Notification to multiple devices
 const sendNotification = async (tokens, title, body, data = {}) => {
   try {
     if (!tokens || tokens.length === 0) {
@@ -64,6 +80,8 @@ const sendNotification = async (tokens, title, body, data = {}) => {
   }
 };
 
+
+//send Notification to a user
 const sendNotificationToUser = async (userId, title, body, data = {}) => {
   try {
     const User = require('../models/User');
@@ -82,6 +100,7 @@ const sendNotificationToUser = async (userId, title, body, data = {}) => {
   }
 };
 
+//send Notification to a branch
 const sendNotificationToBranch = async (branchId, title, body, data = {}) => {
   try {
     const User = require('../models/User');
@@ -110,6 +129,7 @@ const sendNotificationToBranch = async (branchId, title, body, data = {}) => {
   }
 };
 
+//send Notification to all users
 const sendNotificationToAllUsers = async (title, body, data = {}) => {
   try {
     const User = require('../models/User');
@@ -137,6 +157,7 @@ const sendNotificationToAllUsers = async (title, body, data = {}) => {
   }
 };
 
+//send Event Reminder
 const sendEventReminder = async (eventId, reminderType) => {
   try {
     const Event = require('../models/Event');
