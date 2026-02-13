@@ -1,0 +1,327 @@
+.onboarding-screen {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Status Bar Component (94px total) */
+.status-bar-container {
+    width: 393px;
+    height: 94px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.top-status-bar-inner {
+    width: 393px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+}
+
+.status-bar-parent-layout {
+    width: 393px;
+    height: 50px;
+    position: absolute;
+    top: 44px;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+}
+
+/* Screen 1 specific adjustments */
+.screen-1 {
+    background-color: #004DA1;
+}
+
+.logo-group {
+    position: absolute;
+    top: 399px;
+    left: 117px;
+    width: 159.69px;
+    height: 54.49px;
+    /* Hug */
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+}
+
+.mizrmo {
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+    letter-spacing: -1px;
+    display: flex;
+    align-items: center;
+}
+
+.mizrmo span {
+    display: inline-block;
+    width: 32px;
+    height: 38px;
+    background-image: url("data:image/svg+xml,%3Csvg width='32' height='38' viewBox='0 0 32 38' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 0C7.16344 0 0 7.16344 0 16C0 24.8366 16 38 16 38C16 38 32 24.8366 32 16C32 7.16344 24.8366 0 16 0ZM16 23C12.134 23 9 19.866 9 16C9 12.134 12.134 9 16 9C19.866 9 23 12.134 23 16C23 19.866 19.866 23 16 23Z' fill='%23FFCC00'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 2px;
+    transform: translateY(2px);
+}
+
+.tagline {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+}
+
+/* Navigation Button Group 296 */
+.arrow-btn {
+    position: absolute;
+    top: 682px;
+    left: 161px;
+    width: 70px;
+    height: 70px;
+    background-color: #FFCC00;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.arrow-btn svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Screen 2 */
+.screen-2 {
+    width: 393px;
+    height: 852px;
+    background-color: #FFFFFF;
+    position: relative;
+    padding: 0;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* System Status Bar Background - Image shows white/transparent */
+.system-status-bar-bg {
+    position: absolute;
+    width: 393px;
+    height: 52px;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+/* Status Bar Container */
+.status-bar-container.dark {
+    color: #000000;
+}
+
+/* Welcome Illustration Section */
+.welcome-illustration-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.welcome-image-asset-container {
+    position: absolute;
+    width: 356.5px;
+    /* Adjust height to fit image aspect ratio if needed, or keep container fixed */
+    height: 276px;
+    top: 102px;
+    left: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-image-asset-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+
+/* Text Content */
+.onboarding-text-content {
+    position: absolute;
+    width: 282px;
+    height: auto;
+    top: 407px;
+    left: 56px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+}
+
+.onboarding-text-content h1 {
+    font-size: 24px;
+    font-weight: 400;
+    /* User requested: DONT BOLD */
+    color: #000000;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    white-space: nowrap;
+    /* User requested: ALL IN ONE LINE */
+}
+
+.onboarding-text-content p {
+    font-size: 16px;
+    color: #666666;
+    margin: 0;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Pagination Indicator - Matching Image (Dots) */
+.pagination-indicator {
+    position: absolute;
+    width: 70px;
+    height: 20px;
+    top: 624px;
+    left: 162px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    /* Maintaining gap for spacing between dots */
+}
+
+/* Reset ellipses to be simple dots */
+/* Reset ellipses to be simple dots */
+.ellipse-active,
+.ellipse-inactive {
+    position: relative;
+    border-radius: 50%;
+    border: none;
+}
+
+/* Text Content Step 3 and 4 Specifics (Wide Layout) */
+.onboarding-text-content.step-3,
+.onboarding-text-content.step-4 {
+    left: 16px;
+    width: 361px;
+}
+
+/* Text Content Step 5 (Welcome Screen) */
+.onboarding-text-content.step-5 {
+    left: 56px;
+    width: 280px;
+}
+
+/* Specific font adjustment for Step 3 to fit single line */
+.onboarding-text-content.step-3 h1 {
+    font-size: 22px;
+    /* Reduced to prevent clipping */
+}
+
+.onboarding-text-content.step-4 h1 {
+    white-space: normal;
+    /* Allow wrapping for longer title in step 4 */
+}
+
+/* Active Dot (Donut Style) */
+.ellipse-active {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 7px solid #0056B3;
+    /* The 7px border requested */
+    box-sizing: border-box;
+    /* Ensures total size is 20px */
+    border-radius: 50%;
+}
+
+/* Inactive Dots */
+.ellipse-inactive {
+    width: 10px;
+    height: 10px;
+    background-color: #D9D9D9;
+    /* Grey */
+    border-radius: 50%;
+}
+
+/* Group 296 Buttons */
+/* Buttons Helper */
+/* Buttons Helper */
+.btn-next,
+.btn-skip {
+    position: absolute;
+    width: 362px;
+    height: 45px;
+    /* Updated from 50px */
+    left: 16px;
+    border-radius: 30px;
+    /* Updated from 25px */
+    padding: 13px 18px;
+    /* Added padding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    gap: 9px;
+    /* From property panel */
+}
+
+/* Primary Action - NEXT (Solid Blue) */
+/* Placed at Top (per design image) */
+.btn-next {
+    top: 686px;
+    background-color: #0056B3;
+    border: none;
+    color: white;
+}
+
+/* Secondary Action - SKIP (Outline) */
+/* Placed at Bottom (per design image hierarchy) */
+.btn-skip {
+    top: 751px;
+    /* Swapped with old Next position or approximated below Next */
+    background-color: transparent;
+    border: 1px solid #0056B3;
+    /* Assuming black/dark border from image visual */
+    color: #0056B3;
+}
+
+/* Login Button Specifics */
+.btn-login {
+    height: 47px;
+    /* Updated height for Login */
+    border: 1px solid #414141;
+    /* Dark Grey border */
+    color: #414141;
+}
+
+/* Position Home Indicator specifically for Screen 2 */
+.screen-2 .home-indicator {
+    position: absolute;
+    top: 818px;
+    left: 0;
+    width: 393px;
+    height: 34px;
+    bottom: auto;
+}

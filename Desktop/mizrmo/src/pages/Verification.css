@@ -1,0 +1,172 @@
+.verification-page {
+    width: 100%;
+    max-width: 393px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    color: #132235;
+    overflow: hidden;
+}
+
+.status-bar-wrapper {
+    width: 100%;
+}
+
+.page-header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    background: #FFFFFF;
+}
+
+.back-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #414141;
+}
+
+.verification-content-actual {
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.title-section.centered {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.title-section h1 {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+    color: #132235;
+}
+
+.title-section .subtitle {
+    font-size: 14px;
+    color: #94A3B3;
+    margin-top: 8px;
+}
+
+.otp-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+.otp-input-mock {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #E5E7EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    background: #FFFFFF;
+    color: #132235;
+}
+
+.otp-input-mock.filled {
+    border-color: #0056B3;
+}
+
+.resend-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.resend-section p {
+    font-size: 14px;
+    color: #414141;
+}
+
+.resend-link-actual {
+    color: #0056B3;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.verification-page .btn-create-account {
+    width: 362px;
+    height: 45px;
+    background: #0056B3;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.verification-page .btn-create-account:disabled {
+    background: #8FAED4;
+    cursor: not-allowed;
+}
+
+/* Custom Numeric Keyboard */
+.custom-keyboard {
+    margin-top: auto;
+    background-color: #D1D5DB;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    padding: 8px 6px 60px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.key-btn {
+    height: 54px;
+    background: white;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.key-btn:active {
+    background: #E5E7EB;
+}
+
+.key-btn .key-val {
+    font-size: 24px;
+    font-weight: 400;
+    color: #000;
+    line-height: 1;
+}
+
+.key-btn .key-sub {
+    font-size: 10px;
+    font-weight: 700;
+    color: #000;
+    margin-top: -2px;
+}
+
+.delete-btn {
+    background: transparent;
+    box-shadow: none;
+    color: #000;
+}

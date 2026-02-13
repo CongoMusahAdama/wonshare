@@ -1,0 +1,200 @@
+.signin-screen {
+    width: 100%;
+    max-width: 393px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    color: #132235;
+    padding-bottom: 40px;
+}
+
+.status-bar-wrapper {
+    width: 100%;
+}
+
+.page-header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    background: #FFFFFF;
+}
+
+.back-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #414141;
+}
+
+.signin-content {
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.signin-title {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 12px;
+    margin-bottom: 40px;
+    line-height: 1.3;
+    max-width: 364px;
+}
+
+.signin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.input-field-container {
+    width: 100%;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 362px;
+    margin: 0 auto;
+}
+
+.input-wrapper input {
+    width: 100%;
+    height: 45px;
+    border-radius: 30px;
+    border: 1px solid #E5E7EB;
+    padding: 0 100px 0 20px;
+    /* Space for dual icons on right */
+    font-size: 14px;
+    color: #132235;
+    outline: none;
+}
+
+.input-wrapper input::placeholder {
+    color: #94A3B3;
+}
+
+.input-wrapper input:focus {
+    border-color: #0056B3;
+}
+
+.input-icons {
+    position: absolute;
+    right: 16px;
+    display: flex;
+    gap: 12px;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.forgot-password {
+    align-self: flex-end;
+    background: none;
+    border: none;
+    color: #F44336;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 0;
+    margin-top: 4px;
+    margin-right: 15px;
+    /* Adjusting to match Figma offset if needed */
+}
+
+.signin-btn {
+    width: 362px;
+    height: 45px;
+    background: #0056B3;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 32px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 18px;
+}
+
+.signin-btn:hover {
+    background: #004494;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 32px 0;
+    gap: 10px;
+}
+
+.divider-line {
+    flex: 1;
+    height: 1px;
+    background: #D0D0D0;
+}
+
+.divider-text {
+    color: #94A3B3;
+    font-size: 14px;
+}
+
+.social-signin {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.social-btn {
+    width: 360px;
+    height: 45px;
+    background: #FFFFFF;
+    border: 1.5px solid #D0D0D0;
+    border-radius: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #132235;
+    margin: 0 auto;
+}
+
+.social-btn.apple {
+    height: 54px;
+    /* Per spec */
+    border-radius: 41px;
+}
+
+.signup-footer {
+    margin-top: 32px;
+    text-align: center;
+    font-size: 14px;
+    color: #414141;
+}
+
+.signup-link {
+    color: #132235;
+    font-weight: 500;
+    cursor: pointer;
+}

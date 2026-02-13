@@ -1,0 +1,140 @@
+.send-verification-screen {
+    width: 100%;
+    max-width: 393px;
+    height: 100vh;
+    height: 100dvh;
+    margin: 0 auto;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    color: #132235;
+    position: relative;
+    overflow: hidden;
+}
+
+.status-bar-wrapper {
+    width: 100%;
+}
+
+.page-header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    background: #FFFFFF;
+    flex-shrink: 0;
+}
+
+.back-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #414141;
+}
+
+.send-verification-content {
+    flex: 1;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-title-verification {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #000000;
+    margin-top: 30px;
+    /* Adjusting to match approx top: 124px from screen top (94 header + 30) */
+    margin-bottom: 60px;
+    /* Space before input, matches approx top: 214px for input */
+    width: 364px;
+}
+
+.verification-form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.input-field-container {
+    width: 100%;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-wrapper input {
+    width: 362px;
+    height: 45px;
+    border-radius: 30px;
+    border: 1px solid #E5E7EB;
+    padding: 0 50px 0 20px;
+    font-size: 14px;
+    color: #132235;
+    outline: none;
+    background: #FFFFFF;
+}
+
+.input-wrapper input::placeholder {
+    color: #94A3B3;
+    opacity: 0.8;
+}
+
+.input-wrapper input:focus {
+    border-color: #0056B3;
+}
+
+.input-icon-right {
+    position: absolute;
+    right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.footer-button-container {
+    position: absolute;
+    bottom: 110px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+.send-otp-btn {
+    width: 362px;
+    height: 45px;
+    background: #0056B3;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 18px;
+    box-shadow: 0 4px 12px rgba(0, 86, 179, 0.2);
+}
+
+.send-otp-btn:hover {
+    background: #004494;
+}
+
+.send-otp-btn:active {
+    transform: scale(0.98);
+}

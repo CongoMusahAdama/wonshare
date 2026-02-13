@@ -1,0 +1,111 @@
+.success-page {
+    background-color: var(--mizrmo-blue);
+    color: white;
+    padding: 0 40px;
+    justify-content: center;
+}
+
+.success-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.success-icon-container {
+    position: relative;
+    margin-bottom: 48px;
+}
+
+.success-circle-outer {
+    width: 140px;
+    height: 140px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.success-circle-inner {
+    width: 90px;
+    height: 90px;
+    background-color: var(--mizrmo-yellow);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.confetti-dot {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--mizrmo-yellow);
+    animation: float-confetti 3s infinite ease-in-out;
+}
+
+.dot-1 {
+    top: -20px;
+    left: 0;
+    background-color: #FF5722;
+}
+
+.dot-2 {
+    top: 0;
+    right: -30px;
+    background-color: #4CAF50;
+    width: 8px;
+    height: 8px;
+}
+
+.dot-3 {
+    bottom: 0;
+    left: -20px;
+    background-color: #2196F3;
+}
+
+.dot-4 {
+    bottom: -20px;
+    right: 20px;
+    background-color: #FFEB3B;
+    width: 10px;
+    height: 10px;
+}
+
+@keyframes float-confetti {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0);
+    }
+
+    50% {
+        transform: translateY(-15px) rotate(180deg);
+    }
+}
+
+.success-text h1 {
+    font-size: 28px;
+    margin-bottom: 16px;
+    color: white;
+}
+
+.success-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 60px;
+}
+
+.success-page .btn-primary {
+    background-color: white;
+    color: var(--mizrmo-blue);
+    width: 200px;
+}
+
+.success-page .btn-primary:hover {
+    background-color: #f0f0f0;
+}
